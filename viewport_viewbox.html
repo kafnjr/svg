@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Viewport e Viewbox</h1>
+    <!--- definindo a tag SVG e a largura e altura da viewport -->
+    <svg width="300" height="100" style="border: 1px solid red">
+        <circle r="25" cx="150" cy="50"/>
+    </svg>
+
+    <!-- definindo a tag SVG e a largura e a altura da viewbox, a viewbox funciona como uma espécie de "resolução da viewport, diz ao navegador que iremos utilizar uma parte maior dentro da nossa viewport, então, tudo dentro da viewport diminui, é a posição de dimensão dentro da viewport-->
+    <svg width="300" height="100" viewBox="0 0 600 200" style="border: 1px solid red">
+        <circle r="25" cx="150" cy="50"/>
+    </svg>
+</body>
+</html>
